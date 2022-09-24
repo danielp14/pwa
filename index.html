@@ -44,94 +44,104 @@
           </nav>
     </header>
     <main>
-        <section>
-            <div class="section-app container" id="tts">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="text-center container-img animate__animated animate__flipInX">
-                            <img src="img/logos/chat.svg" class="rounded img-fluid" alt="...">
+        <div class="container-fluid">
+            <section>
+                <div class="section-app container" id="tts">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="text-center container-img animate__animated animate__flipInX">
+                                <img src="img/logos/chat.svg" class="rounded img-fluid" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" name="text-input" id="text-input"></textarea>
+                                <label for="text-input">Ingrese texto</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-danger btn-lg" id="btn-clean">
+                                <i class="fa-solid fa-delete-left"></i>
+                                eliminar 
+                            </button>
+                        </div>
+                        <div class="col-6 text-end">
+                            <button type="button" class="btn btn-primary btn-lg" id="btn-speak">
+                                <i class="fa-solid fa-volume-high"></i> Decir 
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="form-floating">
-                            <textarea class="form-control" name="text-input" id="text-input"></textarea>
-                            <label for="text-input">Ingrese texto</label>
+                <div class="section-app card-voice" id="card-voice" >
+                    <div class="row">
+                        <div class="col-sm-12 mt-2 px-0">
+                            <h4 class="text-center">Seleccione su mensaje</h4>
+                        </div>
+                        <div class="col col-xs-6 col-sm-6 col-md-3">
+                            <div class="text-center">
+                                <lord-icon
+                                    class="container-pic" 
+                                    data-msj="1"
+                                    src="https://cdn.lordicon.com/gludglpa.json"
+                                    trigger="hover"
+                                    style="width:150px;height:150px">
+                                </lord-icon>
+                                <p class="fs-6">Bombero</p>
+                            </div>
+                        </div>
+                        <div class="col col-xs-6 col-sm-6 col-md-3">
+                            <div class="text-center">
+                                <lord-icon
+                                    class="container-pic" 
+                                    data-msj="2"
+                                    src="https://cdn.lordicon.com/qcargsbo.json"
+                                    trigger="hover"
+                                    style="width:150px;height:150px">
+                                </lord-icon>
+                                <p class="fs-6 align-text-center">Ambulancia</p>
+                            </div>
+                        </div>
+                        <div class="col col-xs-6 col-sm-6 col-md-3">
+                            <div class="text-center">
+                                <lord-icon
+                                    class="container-pic" 
+                                    data-msj="3"
+                                    src="https://cdn.lordicon.com/fplutblu.json"
+                                    trigger="hover"
+                                    style="width:150px;height:150px">
+                                </lord-icon>
+                                <p class="fs-6 text-center">Entradas</p>
+                            </div>
+                        </div>
+                        <div class="col col-xs-6 col-sm-6 col-md-3">
+                            <div class="text-center">
+                                <lord-icon
+                                    class="container-pic" 
+                                    data-msj="4"
+                                    src="https://cdn.lordicon.com/oaflahpk.json"
+                                    trigger="hover"
+                                    style="width:150px;height:150px">
+                                </lord-icon>
+                                <p class="fs-6 text-center">Ubicación</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row mt-2">
-                    <div class="col-6">
-                        <button type="button" class="btn btn-danger btn-lg" id="btn-clean">
-                            <i class="fa-solid fa-delete-left"></i>
-                            eliminar 
-                        </button>
-                    </div>
-                    <div class="col-6 text-end">
-                        <button type="button" class="btn btn-primary btn-lg" id="btn-speak">
-                            <i class="fa-solid fa-volume-high"></i> Decir 
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="section-app card-voice" id="card-voice" >
-                <div class="row">
-                    <div class="col-sm-12 mb2">
-                        <h4 class="text-center">Seleccione su mensaje</h4>
-                    </div>
-                    <div class="col col-xs-6 col-sm-6 col-md-3">
-                        <div class="container-pic text-center" data-msj="1">
-                            <lord-icon
-                                src="https://cdn.lordicon.com/gludglpa.json"
-                                trigger="hover"
-                                style="width:150px;height:150px">
-                            </lord-icon>
-                            <p class="fs-6">Bombero</p>
-                        </div>
-                    </div>
-                    <div class="col col-xs-6 col-sm-6 col-md-3">
-                        <div class="container-pic text-center" data-msj="2">
-                            <lord-icon
-                                src="https://cdn.lordicon.com/qcargsbo.json"
-                                trigger="hover"
-                                style="width:150px;height:150px">
-                            </lord-icon>
-                            <p class="fs-6 align-text-center">Ambulancia</p>
-                        </div>
-                    </div>
-                    <div class="col col-xs-6 col-sm-6 col-md-3">
-                        <div class="container-pic text-center" data-msj="3">
-                            <lord-icon
-                                src="https://cdn.lordicon.com/fplutblu.json"
-                                trigger="hover"
-                                style="width:150px;height:150px">
-                            </lord-icon>
-                            <p class="fs-6 text-center">Entradas</p>
-                        </div>
-                    </div>
-                    <div class="col col-xs-6 col-sm-6 col-md-3">
-                        <div class="container-pic text-center" data-msj="4">
-                            <lord-icon
-                                src="https://cdn.lordicon.com/oaflahpk.json"
-                                trigger="hover"
-                                style="width:150px;height:150px">
-                            </lord-icon>
-                            <p class="fs-6 text-center">Ubicación</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <footer>
         <nav class="navbar fixed-bottom" id="footer-menu">
             <div class="container-fluid">
-                <li class="link-section" data-link="1">
-                    <a href="#tts"><i class="fa-solid fa-comment-dots"></i> TEXTO</a>
+                <li>
+                    <a href="#" class="link-section" data-link="tts" ><i class="fa-solid fa-comment-dots"></i> TEXTO</a>
                 </li>
-                <li class="link-section" data-link="2">
-                    <a href="#card-voice"><i class="fa-solid fa-image"></i> IMAGEN</a>
+                <li>
+                    <a href="#"class="link-section" data-link="card-voice" ><i class="fa-solid fa-image"></i> IMAGEN</a>
                 </li>
             </div>
         </nav>
